@@ -1,54 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-light">
-        <div class="container" style="height:auto;">
-               
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <li class="nav-item ms-auto">
-                         <!--Here a flipkart logo-->
-                    <a href=""><img src="flipkart-plus_8d85f4.png" alt="" class="image-fluid" height="20px"></a>
-                    <div>
-                        <a href="" class="text-light fs-6"> <i>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container">
+        <span class="nav-item ms-auto">
+            <a href=""><img src="/Images/flipkart-plus_8d85f4.png" alt="" class="image-fluid" height="20px"></a>
+                <div class="d-flex">
+                    <a href="" class="text-light" style="font-size: 15px;"> <i>
                             Explore</i>                       
-                        <span class="text-warning fs-6">plus
+                    <span class="text-warning fs-6">plus
                             <!--Here a flipkart plus another logo-->
-                        <img src="plus_aef861.png" alt="plus" height="10px"></span></a> 
-                    </div>
-                    </li>
-                    <li class="nav-item ms-auto" style="width: 500px;">
-                        <div class="d-flex input-group mb-3">
-                            <input class="form-control" type="search" placeholder="Search for Products,brands and more" aria-label="Search">
-                            <button class="btn-search"><i class="fa fa-search"></i></button>
-                        </div>                       
-                    </li>                    
-                    <ul class="navbar-nav ms-auto">
-                        <li class="navbar-item">
-                            <button type="button" class="btnlogin">Login</button>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="" class="nav-link mx-3 text-light">More <i class="fa fas fa-angle-down" style="color: white;"></i></a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="" class="nav-link mx-3 text-light"> <i class="fa fa-shopping-cart" style="color: white;"></i> Cart
-                            </a>
-                        </li>
+                    <img src="Images/plus_aef861.png" alt="plus" height="10px"></span></a> 
+                </div>
+        </span> 
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <div class="form-group mt-1 m-0 col-6 ml-2">
+                <div class="input-group-text text-primary bg-white">
+                    <input type="text" class="form-control border-0" placeholder="Search More Product" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="bg-white px-2" id="basic-addon2"><svg style="border: none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg></span>
+                </div>
+            </div>
 
-                    </ul>
+            <ul class="navbar-nav mx-auto">
+                <li class="navbar-item">
+                    <button type="button" class="btnlogin">Login</button>
+                </li>
+                <li class="navbar-item">
+                    <a href="" class="nav-link mx-3 text-light" style="font-size: 14px;"><b>More</b>  <i class="fa fas fa-angle-down" style="color: white; font-size: 14px;"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <a href="" class="nav-link mx-3 text-light" style="font-size: 14px;;"> <i class="fa fa-shopping-cart" style="color: white; font-size: 14px;"></i> <b>
+                        Cart</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Section images strats-->
+<section class="py-4 bg-white">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between imagesalign">
+            <div>
+                <img src="Images/f15c02bfeb02d15d.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fs-6">Top offers</p>
+            </div>  
+            <div> 
+                <img src="Images/29327f40e9c4d26b.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block">Grocery</p>
+            </div>  
+            <div> 
+                <img src="Images/22fddf3c7da4c4f4.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block">Mobiles</p>
+            </div>  
+            <div>
+                <img src="Images/82b3ca5fb2301045.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fs-6">Fashions  <i class="fa fas fa-angle-down" ></i></p>
+            </div>  
+            <div> 
+                <img src="Images/69c6589653afdb9a.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block">Electronics  <i class="fa fas fa-angle-down" ></i></p>
+            </div>  
+            <div> 
+                <img src="Images/ab7e2b022a4587dd.jpg" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block">Home</p>
+            </div>  
+            <div> 
+                <img src="Images/0ff199d1bd27eb98.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block">Appliances <i class="fa fas fa-angle-down" ></i></p>
+            </div>  
+            <div>
+                <img src="Images/71050627a56b4693.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block fs-6">Travel</p>
+            </div>  
+            <div> 
+                <img src="Images/dff3f7adcf3a90c6.png" alt="" class="img-fluid" height="50px" width="50px">
+                <p class="d-block">Beauty,toys& More <i class="fa fas fa-angle-down" ></i></p>
+            </div>  
+        </div>
+    </div>
+</section>
+<!--Section images Ends-->
+<body bg-color="pink">
+    <div class="container mt-3 ">
+        <div class="row">
+            <div class="col-10">
+                <!--Deals of the day-->
+                <!--Section strat-->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between imagesalign box">
+                        <div class="card">
+                            <div class="card-header bg-white">
+                                <div class="inline-block">
+                                    <span class="d-flex justify-content-between">
+                                        <p class="mb-0" style="font-size: 20px;"><b>Deals of the day </b><img src="Images/clock-regular.svg" height="20px" width="20px" alt=""> <i class="fa fas fa-clock"></i>
+                                        22:07:36 left</p>
+                                    
+                                    <button class="btn btn-primary float-right">View All</button></span>
+                                </div>
+                            </div>
+                            <div class="card-body" style="overflow-y: auto;">
+                                <div class="col-12 d-flex">
+                                    <div class="pr-3">
+                                        <img src="Images/c-ex187-casio-original-imafgh35rvuawpu5.jpeg" alt="" class="img-fluid" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Casio,Fastrack,Sonata</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >From &#x20B9599</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>  
+                                    <div class="pr-3">
+                                        <img src="Images/8-2-luggage-picture.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Bags and Luggage</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Grab The Deal</p>
+                                    </div>  
+                                    <div class="pr-3">
+                                        <img src="Images/thumbnail_deal-2.jpg" alt="" class="imagedealofday">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Home, Temple</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >Upto 60% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>  
+                                    <div class="pr-3">
+                                        <img src="Images/thumbnail_deal-10.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Home Decore</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >From &#x20B9 999</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Best Deal</p>
+                                    </div> 
+                                    <div class="pr-3">
+                                        <img src="Images/thumbnail_deal-5.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Best of Brands!</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >From &#x20B9 599</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>  
+                                    <div class="pr-3">
+                                        <img src="Images/thumbnail_deal-4.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Home Decore</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >From ₹149+Extra10%Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Harpa, Zivame, Dreambe.</p>
+                                    </div>  
+                                    <div class="pr-3">
+                                        <img src="Images/wr-hs-001-furniture-kart-original-imafxk3nwtqbjdch.jpeg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Swings, Stools</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Section Ends-->
+                <!-- End Deals of the day-->
+            </div>
+            <div class="col my-auto box">
+                <div> 
+                    <img src="Images/thumbnail_deal-7.jpg" alt="" class="img-fluid" style="height: 330px; width:330px ;" >
+                </div> 
             </div>
         </div>
-    </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <div class="row mt-3">
+            <div class="col-12">
+                <!--Deals of the day-->
+                <!--Section strat-->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between imagesalign box">
+                        <div class="card">
+                            <div class="card-header bg-white">
+                                <div class="inline-block">
+                                    <span class="d-flex justify-content-between">
+                                        <p class="mb-0" style="font-size: 20px;"><b>Men's Footwear & Instrument </b>
+                                       </p>
+                                       
+                                    <button class="btn btn-primary float-right">View All</button></span>
+                                </div>
+                                <p class="float-left mt-0 mb-0 text-secondary" style="font-size: 15px;">Shop Now!</p>
+                            </div>
+                            <div class="card-body" style="overflow-y: auto;">
+                                <div class="col-12 d-flex">
+                                    <div class="pr-4">
+                                        <img src="Images/R.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Nike, ASICS</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >Explore More!!</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Sports Shoes</p>
+                                    </div>  
+                                    <div class="pr-4">
+                                        <img src="Images/ad-removebg-preview.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Addidas</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >Explore More!!</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Sports Shoes</p>
+                                    </div>
+                                    <div class="pr-4">
+                                        <img src="Images/rebook-removebg-preview.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Reebok</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >Explore More!!</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Sports Shoes</p>
+                                    </div>  
+                                    <div class="pr-4">
+                                        <img src="Images/001.jpg" alt="" class="imagedealofday">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Harmoniums</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >Up to 60% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Shop Now!</p>
+                                    </div>
+                                    <div class="pr-4">
+                                        <img src="Images/R__1_-removebg-preview.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Fila</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >50-70% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Sports Shoes</p>
+                                    </div>  
+                                    <div class="pr-4">
+                                        <img src="Images/002.jpg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Flutes</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >Upto 80% Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Shop Now!</p>
+                                    </div>
+                                    <div class="pr-4">
+                                        <img src="Images/xl-sftops4257-sassafras-original-imafhz6ucvgrtsfw-removebg-preview.png" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Ruffled Tops</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >From ₹149+Extra10%Off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Harpa, Zivame, Dreambe.</p>
+                                    </div>  
+                                    <div class="pr-4">
+                                        <img src="Images/wr-hs-001-furniture-kart-original-imafxk3nwtqbjdch.jpeg" alt="" class="imagedealofday" height="100px" width="100px">
+                                        <p class="d-block pt-2 mb-1" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Swings, Stools</p>
+                                        <p class="text-success mb-0" style="font-size: 12px;" >Upto 80%+Extra 10%off</p>
+                                        <p class="text-secondary" style="font-size: 12px;">Knockout Deals</p>
+                                    </div>            
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Section Ends-->
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </html>
